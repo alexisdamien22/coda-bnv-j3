@@ -4,7 +4,7 @@
 int main()
 {
 	char operation;
-	printf("Choisissez une operation a effectuer\n");
+	printf("Choisissez une opération a effectuer\n");
 	scanf("%c", &operation);
 	if(operation==43)
 	{

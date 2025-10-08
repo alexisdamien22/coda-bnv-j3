@@ -8,6 +8,11 @@ int main()
 	char symbole;
 	printf("Choisissez un symbole + (montant) ou - (descendant)\n");
 	scanf("%c",&symbole);
+	if(symbole!=43 || symbole!=45)
+	{
+		printf("Ce symbole n'est pas valide\n");
+		exit(0);
+	}
 	printf("Choisissez un entier positif différent de 0 :\n");
 	scanf("%d",&max);
 	if(symbole==43)
@@ -26,9 +31,4 @@ int main()
               		max--;
        		}
 	}
-	else
-	{
-		printf("Ce symbole n'est pas valide\n");
-	}
-	exit(0);
 }
